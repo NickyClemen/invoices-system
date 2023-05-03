@@ -8,7 +8,7 @@ import { HttpStatus } from '@nestjs/common';
 import { DefaultInvoice } from '../../../shared/mocks/invoices';
 import { InvoiceMessages } from '../../../../src/invoice/domain/enums/InvoiceMessages.enum';
 
-describe.skip('ListInvoicesNotExpiredController', () => {
+describe('ListInvoicesNotExpiredController', () => {
   beforeEach(async () => {
     await invoiceApiClient.createInvoice(DefaultCompany.uuid, DefaultInvoice);
   });

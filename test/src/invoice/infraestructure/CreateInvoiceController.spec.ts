@@ -7,7 +7,7 @@ import { HttpStatus } from '@nestjs/common';
 import { CompanyMessages } from '../../../../src/company/domain/enums/CompanyMessages.enum';
 import { DefaultInvoice } from '../../../shared/mocks/invoices';
 
-describe.skip('CreateInvoiceController', () => {
+describe('CreateInvoiceController', () => {
   it('should error if params are invalid.', async () => {
     const response = await invoiceApiClient.createInvoice();
 
